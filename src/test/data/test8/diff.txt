@@ -1,0 +1,20 @@
+1a2
+> #include <stdlib.h>
+5c6,14
+<         printf("Hello, Alex\n");
+---
+>         char *username;
+> 
+>         username = getenv("USERNAME");
+> 
+>         if (username != NULL) {
+>                 printf("Hello, %s\n", username);
+>         } else {
+>                 printf("Hello, Alex\n");
+>         }
+12c21,22
+<         return 0;
+\ No newline at end of file
+---
+>         return 0;
+> }

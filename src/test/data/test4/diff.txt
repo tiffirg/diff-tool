@@ -1,0 +1,20 @@
+2c2
+< nfunctionresult NUMBER(9);
+---
+> nFunctionResult NUMBER(9);
+4,11c4,5
+< 
+< nFunctionResult :=
+< orauser.pack_util.FGetNeededValue (
+< in_nSomeParam => somevalue
+< );
+< 
+< dbms_output.put_line('Function result: '||
+< nFunctionResult);
+---
+> nFunctionResult := orauser.pack_util.FGetNeededValue (in_nSomeParam => somevalue);
+> dbms_output.put_line('Function result: '||nFunctionResult);
+16c10
+< orauser.pack_util.PReportError('OTHER exception');
+---
+> orauser.pack_util.PReportError('OTHER');

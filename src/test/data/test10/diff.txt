@@ -1,0 +1,731 @@
+11a12
+>     min-height: 100vh;
+83c84,86
+<     flex: 1 0 0%;
+---
+>     background-color: #13191e;
+>      flex-grow: 1;
+>     height: 100%;
+196c199
+<     padding-bottom: 32px;
+---
+>     padding-bottom: 16px;
+266a270
+> 
+270d273
+<     background-image: url(http://booker.psdemo.ru/data/banners/img_header.jpg);
+271a275
+>     width: 100%;
+275,278d278
+< 
+<     background-color: #16212b;
+<     overflow: visible;
+< 
+281c281
+<     border-radius: 12px;
+---
+> }
+282a283,284
+> .container_sliders{
+>     margin-bottom: 30px;
+284c286,288
+< 
+---
+>     border-radius: 12px;
+>     background-color: #16212b;
+>     overflow: visible;
+285a290
+> 
+326,369c331
+< .menu_carousel {
+<     position: relative;
+< }
+< 
+< .isHidden {
+<     display: none;
+< }
+< 
+< .carousel_btn_next {
+<     right: -20px;
+<     top: calc(50% - 20px);
+< 
+< }
+< 
+< .carousel_btn_prev {
+<     left: -20px;
+<     top: calc(50% - 20px);
+< }
+< 
+< .carousel_btn_next, .carousel_btn_prev {
+<     display: flex;
+<     align-items: center;
+<     justify-content: center;
+<     position: absolute;
+<     width: 40px;
+<     height: 40px;
+<     border-radius: 50%;
+<     background-color: #ffffff;
+<     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.13);
+<     z-index: 2;
+<     background-image: none;
+<     cursor: pointer;
+< }
+< 
+< .swiper_container {
+<     margin: 0 auto;
+<     position: relative;
+<     overflow: hidden;
+<     list-style: none;
+<     padding: 0;
+<     z-index: 1;
+< }
+< 
+< .swiper_container .swiper_notification {
+---
+> .swiper-container .swiper_notification {
+378,398d339
+< .swiper-container-horizontal > .swiper-pagination-bullets {
+<   bottom: 10px;
+<   left: 0;
+<   width: 100%;
+< }
+< .swiper-container-horizontal > .swiper-pagination-progressbar {
+<   width: 100%;
+<   height: 4px;
+<   left: 0;
+<   top: 0;
+< }
+< 
+< .swiper-container-horizontal > .swiper-scrollbar {
+<   position: absolute;
+<   left: 1%;
+<   bottom: 3px;
+<   z-index: 50;
+<   height: 5px;
+<   width: 98%;
+< }
+< 
+400,430c341
+< .swiper_wrapper {
+<     position: relative;
+<     width: 100%;
+<     height: 100%;
+<     z-index: 1;
+<     display: -webkit-box;
+<     display: -webkit-flex;
+<     display: -ms-flexbox;
+<     display: flex;
+<     -webkit-transition-property: -webkit-transform;
+<     transition-property: -webkit-transform;
+<     -o-transition-property: transform;
+<     transition-property: transform;
+<     transition-property: transform, -webkit-transform;
+<     -webkit-box-sizing: content-box;
+<     box-sizing: content-box;
+< }
+< 
+< .swiper_container-android .swiper_slide, .swiper_wrapper {
+<     -webkit-transform: translate3d(0px, 0, 0);
+<     transform: translate3d(0px, 0, 0);
+< }
+< 
+< .swiper-container-free-mode > .swiper_wrapper {
+<   -webkit-transition-timing-function: ease-out;
+<   -o-transition-timing-function: ease-out;
+<   transition-timing-function: ease-out;
+<   margin: 0 auto;
+< }
+< 
+< .swiper_slide {
+---
+> .swiper-slide {
+447c358
+< .swiper_slide {
+---
+> .swiper-slide {
+459a371,372
+>     width: 124px;
+>     overflow-x:hidden;
+482a396
+> 
+498c412
+< .arrow_left, .arrow_right {
+---
+> .arrowLeft, .arrowRight {
+508c422
+< .arrow_right {
+---
+> .arrowRight {
+562,601d475
+< @media (min-width:576px){
+< .container{
+<     max-width:540px
+< }}
+< 
+< @media (min-width:768px){
+< .container {
+<     max-width:720px
+< }}
+< 
+< @media (min-width:992px){
+< .container{
+<     max-width:960px
+< }}
+< 
+< @media (min-width:1200px){
+< .container {
+<     max-width:1140px
+< }}
+< 
+< @media (min-width:576px){
+< .container {
+<     max-width:540px
+< }}
+< 
+< @media (min-width:768px){
+< .container {
+<     max-width:720px
+< }}
+< 
+< @media (min-width:992px){
+< .container {
+<     max-width:960px
+< }}
+< 
+< @media (min-width:1200px){
+< .container{
+<     max-width:1140px
+< }}
+< 
+764a639,643
+> .book_list_items h1 {
+>     text-align: center;
+>     color: white;
+> }
+> 
+849a729,733
+> .section_books_cart {
+>     padding: 80px 120px 40px 80px;
+> 
+> }
+> 
+852c736
+<     background-color: #13191e;
+---
+>     background-color: #16212b;
+854c738
+< 
+---
+>     margin: 40px 0px;
+1010a895,1405
+> }
+> 
+> .ab-container {
+>     padding: 120px 0px 80px 40px;
+>     background-color: #13191e;
+> 
+> }
+> 
+> .block_table {
+>     border-radius: 12px;
+>     background-color: #16212b;
+>     display: table;
+>     position: relative;
+> }
+> 
+> .column {
+>     display: table-cell;
+>     vertical-align: top;
+> }
+> 
+> .content_column {
+>     min-width: 800px;
+> }
+> 
+> .block_table {
+>     display: table;
+>     width: 100%;
+> }
+> 
+> .biblio_book_top {
+>     margin-bottom: 30px;
+> }
+> 
+> .biblio_book_left, biblio_book_center {
+>     vertical-align: top;
+> }
+> 
+> .biblio_book_center {
+>     padding: 30px 30px;
+> }
+> 
+> .biblio_book_left {
+>     padding: 30px 30px;
+>     width: 1%;
+> }
+> 
+> .biblio_book_cover {
+>     position: relative;
+> }
+> 
+> .biblio_book_left .biblio_book_other_carriers {
+>     margin: 10px 0 10px 80px;
+> }
+> 
+> .biblio_book_other_carriers {
+>     color: #777;
+>     font-size: 12px;
+>     line-height: 30px;
+> }
+> 
+> .biblio_book_other_carriers__item {
+>     padding: 7px 0 7px 22px;
+>     position: relative;
+>     line-height: 16px;
+>     color: #767579;
+>     margin-right: 10px;
+> }
+> 
+> .cover {
+>     line-height: 0;
+>     position: relative;
+> }
+> 
+> .biblio_book_cover_image {
+>     border: 1px solid #cecdcc;
+>     max-width: 417px;
+>     box-sizing: content-box;
+>     -moz-box-sizing: content-box;
+>     -webkit-box-sizing: content-box;
+> }
+> 
+> 
+> .biblio-book__title-block {
+>     margin-bottom: 10px;
+> }
+> 
+> .biblio_book_name {
+>     margin-bottom: 10px;
+> }
+> 
+> .biblio_book_name h1 {
+>     display: inline;
+>     font-size: 18px;
+>     font-weight: bold;
+>     line-height: 20px;
+> 
+> }
+> 
+> .biblio-book__title-block h1 {
+>     line-height: 30px;
+>     display: inline-block;
+> 
+> }
+> 
+> .biblio-book__title-block .label-text {
+>     background-color: #EBEBEB;
+>     color: #767579;
+> }
+> 
+> .biblio-book__title-block .label {
+>     word-break: break-word;
+>     border-radius: 12px;
+>     font-size: 14px;
+>     padding: 5px 7px;
+>     margin: 0 0 0 8px;
+>     text-transform: uppercase;
+>     position: relative;
+>     vertical-align: middle;
+>     opacity: 1;
+>     text-decoration: none;
+>     font-weight: normal;
+> }
+> 
+> .biblio_book_author, .biblio_book_sequences {
+>     font-size: 14px;
+>     line-height: 20px;
+> }
+> 
+> .biblio_book_annotation {
+>     margin-bottom: 18px;
+>     color: white;
+> }
+> 
+> .biblio_book_descr_caption, .biblio_book_info_detailed_caption {
+>     font-size: 18px;
+>     line-height: 22px;
+>     margin-bottom: 14px;
+>     font-weight: bold;
+> }
+> 
+> .biblio_book_buy {
+>     margin-bottom: 10px;
+>     width: 440px;
+> }
+> 
+> .biblio_book_buy .coolbtn {
+>     display: block;
+>     width: 100%;
+>     font-size: 16px;
+>     font-weight: bold;
+>     height: 50px;
+>     line-height: 50px;
+> }
+> 
+> .btn-green.btn-green {
+>     color: #fff;
+>     background: #0e920e;
+>     transition: all 0.3s ease 0s;
+> }
+> 
+> .coolbtn {
+>     -webkit-appearance: none;
+> }
+> 
+> .coolbtn {
+>     border: 0 none;
+>     position: relative;
+>     padding: 0 10px;
+>     text-decoration: none;
+>     display: inline-block;
+>     height: 40px;
+>     line-height: 40px;
+>     font-size: 13px;
+>     text-align: center;
+>     white-space: nowrap;
+>     cursor: pointer;
+>     border-radius: 3px;
+> }
+> 
+> .uppercase {
+>     text-transform: uppercase;
+> }
+> 
+> .biblio_book_author {
+>     font-size: 11px;
+>     color: #be5b04;
+> }
+> 
+> .light {
+>   background: #f3f3f3;
+>   overflow: hidden; }
+> 
+> .wrapper {
+>   margin: 0;
+>   padding: 4em; }
+> 
+> .doc {
+>   border-bottom: 1px solid #ccc;
+>   margin: 1em auto;
+>   width: 40%; }
+>   .doc .title {
+>     text-align: center; }
+> 
+> /*!
+>  * The important stuffs. The ones that you should copy-paste and use.
+>  */
+> .paginate {
+>   text-align: center;
+> }
+> .paginate ul {
+>     list-style: none;
+>     margin: 0;
+>     padding: 0;
+>     text-align: center;
+> }
+> .paginate li {
+>     display: inline;
+> }
+> .paginate a {
+>     border-radius: 3px;
+>     box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px;
+>     margin: 1px 2px;
+>     padding: 5px 10px;
+>     display: inline-block;
+>     border-top: 1px solid #fff;
+>     text-decoration: none;
+>     color: #717171;
+>     font-size: smaller;
+>     font-family: "Helvetica Neueu", Helvetica, Arial, sans-serif;
+>     text-shadow: white 0 1px 0;
+>     background-color: #f5f5f5;
+>     background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eaeaea));
+>     background-image: -webkit-linear-gradient(top, #f9f9f9, #eaeaea);
+>     background-image: -moz-linear-gradient(top, #f9f9f9, #eaeaea);
+>     background-image: -ms-linear-gradient(top, #f9f9f9, #eaeaea);
+>     background-image: -o-linear-gradient(top, #f9f9f9, #eaeaea);
+>     background-image: linear-gradient(top, #f9f9f9, #eaeaea);
+>     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', EndColorStr='#eaeaea');
+> }
+> .paginate a:first-child, .paginate a.first {
+>     margin-left: 0;
+> }
+> .paginate a:last-child, .paginate a.last {
+>     margin-right: 0;
+> }
+> .paginate a:hover, .paginate a:focus {
+>   border-color: #fff;
+>   background-color: #fdfdfd;
+>   background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#fafafa));
+>   background-image: -webkit-linear-gradient(top, #fefefe, #fafafa);
+>   background-image: -moz-linear-gradient(top, #fefefe, #fafafa);
+>   background-image: -ms-linear-gradient(top, #fefefe, #fafafa);
+>   background-image: -o-linear-gradient(top, #fefefe, #fafafa);
+>   background-image: linear-gradient(top, #fefefe, #fafafa);
+>   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe', EndColorStr='#fafafa');
+> }
+> 
+> .paginate a.more {
+>   box-shadow: 0 0 0 0 transparent;
+>   border: 0 none;
+>   background: transparent;
+>   margin-left: 0;
+>   margin-right: 0;
+> }
+> .paginate a.active {
+>   box-shadow: rgba(0, 0, 0, 0.75) 0 0 0 0 inset;
+>   border-color: #505050;
+>   color: #f2f2f2;
+>   text-shadow: black 0 1px 0;
+>   background-color: #676767;
+>   background-image: -webkit-gradient(linear, left top, left bottom, from(#5f5f5f), to(#5c5c5c));
+>   background-image: -webkit-linear-gradient(top, #5f5f5f, #5c5c5c);
+>   background-image: -moz-linear-gradient(top, #5f5f5f, #5c5c5c);
+>   background-image: -ms-linear-gradient(top, #5f5f5f, #5c5c5c);
+>   background-image: -o-linear-gradient(top, #5f5f5f, #5c5c5c);
+>   background-image: linear-gradient(top, #5f5f5f, #5c5c5c);
+>   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#5f5f5f', EndColorStr='#5c5c5c');
+> }
+> 
+> .paginate-dark a {
+>   box-shadow: rgba(0, 0, 0, 0.3) 0 0 0 1px;
+>   border-top: 1px solid #62686d;
+>   text-shadow: rgba(0, 0, 0, 0.75) 0 1px 0;
+>   color: #fff;
+>   background-color: #4e5458;
+>   background-image: -webkit-gradient(linear, left top, left bottom, from(#575e63), to(#3f4347));
+>   background-image: -webkit-linear-gradient(top, #575e63, #3f4347);
+>   background-image: -moz-linear-gradient(top, #575e63, #3f4347);
+>   background-image: -ms-linear-gradient(top, #575e63, #3f4347);
+>   background-image: -o-linear-gradient(top, #575e63, #3f4347);
+>   background-image: linear-gradient(top, #575e63, #3f4347);
+>   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#575e63', EndColorStr='#3f4347');
+> }
+> .paginate-dark a:hover, .paginate-dark a:focus {
+>     border-color: #61788a;
+>     background-color: #4d6374;
+>     background-image: -webkit-gradient(linear, left top, left bottom, from(#566f82), to(#3e505e));
+>     background-image: -webkit-linear-gradient(top, #566f82, #3e505e);
+>     background-image: -moz-linear-gradient(top, #566f82, #3e505e);
+>     background-image: -ms-linear-gradient(top, #566f82, #3e505e);
+>     background-image: -o-linear-gradient(top, #566f82, #3e505e);
+>     background-image: linear-gradient(top, #566f82, #3e505e);
+>     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#566f82', EndColorStr='#3e505e');
+>  }
+> 
+> .paginate-dark a.active {
+>     box-shadow: rgba(0, 0, 0, 0.75) 0 0 0 0 inset;
+>     border-color: #2d3035;
+>     background-color: #303338;
+>     background-image: -webkit-gradient(linear, left top, left bottom, from(#303338), to(#2d3034));
+>     background-image: -webkit-linear-gradient(top, #303338, #2d3034);
+>     background-image: -moz-linear-gradient(top, #303338, #2d3034);
+>     background-image: -ms-linear-gradient(top, #303338, #2d3034);
+>     background-image: -o-linear-gradient(top, #303338, #2d3034);
+>     background-image: linear-gradient(top, #303338, #2d3034);
+>     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#303338', EndColorStr='#2d3034');
+>  }
+> 
+> .main_genres {
+>     width: 100%;
+>     height: 100%;
+>     display: block;
+>     padding: 120px 60px 80px 60px;
+>     background-color: #13191e;
+>     background-image: url(http://booker.psdemo.ru/data/banners/img_header.jpg);
+> }
+> 
+> 
+> .main_genres section {
+>     display: inline-block;
+>     vertical-align: top;
+>     width: 100%;
+> 
+>     background-color: #13191e;
+>     border-radius: 12px;
+>     padding-bottom: 20px;
+> 
+> }
+> 
+> ._9837af {
+>     position: relative;
+>     margin: 2.4rem 0 0 1.2rem;
+>     padding: 0 0 0 2.4rem;
+>     flex: 1;
+>     word-break: break-word;
+> }
+> 
+> @media (min-width: 36em)
+> ._289d24 {
+>     margin: 2.4rem 0 2.4rem 1.2rem;
+>     padding: 0 0 0 .6rem;
+> }
+> 
+> ._289d24 {
+>     box-sizing: border-box;
+>     width: 100%;
+>     margin: 0;
+>     padding: 0;
+>     display: inline-block;
+>     vertical-align: top;
+>     text-transform: uppercase;
+> }
+> 
+> ._953327 {
+>     color: #777;
+>     font-family: var(--fontNormal);
+>     font-weight: 700;
+>     font-size: var(--fontSizeL);
+>     line-height: var(--lineHeightL);
+>     text-transform: var(--textTransformNone);
+>     letter-spacing: var(--letterSpacingNormal);
+> }
+> 
+> ._b5542b {
+>     display: flex;
+>     flex-flow: row wrap;
+>     transition: all .5s ease-in-out;
+>     padding: 0px;
+>     margin: 0px;
+>     list-style-type: none;
+>     list-style: none;
+>     box-sizing: inherit;
+> }
+> 
+> ._899320 {
+>     flex: 0 0 33%;
+>     page-break-inside: avoid;
+>     -moz-column-break-inside: avoid;
+>     break-inside: avoid;
+> }
+> 
+> ._bf2350 {
+>     color: #be5b04;
+> }
+> 
+> ._7fe79a {
+>     transition: opacity .15s;
+>     text-decoration: none;
+> }
+> 
+> ._b4693b {
+>     font-size: var(--fontSizeM);
+>     line-height: var(--lineHeightM);
+>     text-transform: var(--textTransformNone);
+>     letter-spacing: var(--letterSpacingNormal);
+>     font-family: var(--fontNormal);
+>     font-weight: 400;
+> }
+> 
+> ._1b82e1 {
+>     padding: .6rem 0 1.2rem;
+> }
+> 
+> ._e86232 {
+>     margin: 0;
+>     padding: .6rem 0 1.2rem;
+>     text-transform: uppercase;
+> }
+> 
+> .thumbelina {
+>     list-style:none;
+>     padding:0px;
+>     margin:0px;
+>     position:absolute;
+>     white-space:nowrap;
+>     /* font-size:0 stop gaps between display-inline li elemets */
+>     /* Either do this, or remove all white space in HTML beween li elements */
+>     font-size:0;
+> 
+>     /* prevent annoying iPad cut/paste actions */
+>     -webkit-touch-callout: none;
+>     -webkit-user-select: none;
+> }
+> 
+> /* Style for the list items that surround the thumbnails */
+> .thumbelina li {
+>    padding:15px;
+>    display: inline-block;
+>    line-height: 0px;
+>    margin:0px;
+> }
+> 
+> /* Add a border to the thumbnails. */
+> .thumbelina li img {
+>      border:1px solid #ccc;
+> }
+> 
+> /* Hover effect for the images */
+> .thumbelina li img:hover {
+>      border:1px solid #aaa;
+> }
+> 
+> 
+> /*
+>     Following is the CSS for the navigation buttons.
+>     They are designed to fit flush on the ends of the slider
+>     using absolute positioning, with the container as the parent element.
+>     The sizes are set to match the demo slider.
+>     You can change any of this as you wish - you don't even need to use these classes.
+>     Position the buttons where you like on the page, change sizes, use images etc.
+>     They don't have to be children of the container.
+> */
+> 
+> /* Common style for the buttons */
+> .thumbelina-but {
+>     display: flex;
+>     align-items: center;
+>     justify-content: center;
+>     position: absolute;
+>     width: 40px;
+>     height: 40px;
+>     border-radius: 50%;
+>     background-color: #ffffff;
+>     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.13);
+>     z-index: 2;
+>     background-image: none;
+>     cursor: pointer;
+> }
+> 
+> 
+> /* Disabled style when button is not active due to extents being reached. */
+> /* You could do other things e.g. make buttons dissapear completely. */
+> .thumbelina-but.disabled,
+> .thumbelina-but.disabled:hover {
+>     display: none;
+> }
+> 
+> 
+> /* Left edge button. */
+> .left {
+>    left: -20px;
+>     top: calc(50% - 20px);
+> }
+> /* Right edge button */
+> .right {
+>     right: -20px;
+>     top: calc(50% - 20px);
+> }
+> 
+> .arrow_left, .arrow_right {
+>     display: inline-block;
+>     width: 16px;
+>     height: 16px;
+>     transform-origin: center center;
+>     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbD0iI0JFNUIwNCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNS4yIDYuODQzTDkuOCAyLjI2YS44OTQuODk0IDAgMCAxIDEuMjY0IDEuMjYzTDYuNTYyIDguMDI1bDQuNDUyIDQuNDUyYS44OTIuODkyIDAgMCAxLTEuMjYyIDEuMjYzTDQgOC4wMWwxLjItMS4xNjd6Ii8+PC9zdmc+);
+>     vertical-align: middle;
+>     background-size: cover;
+> }
+> 
+> .arrow_right {
+>     transform: rotate(180deg);

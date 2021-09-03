@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void say_hello(void)
+{
+        char *username;
+
+        username = getenv("USERNAME");
+
+        if (username != NULL) {
+                printf("Hello, %s\n", username);
+        } else {
+                printf("Hello, Alex\n");
+        }
+}
+
+int main (int argc, char** argv)
+{
+        say_hello();
+
+        return 0;
+}

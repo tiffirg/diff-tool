@@ -1,0 +1,13 @@
+0a1
+> # The ring poem in the black speech of mordor
+6,9c7,9
+< One Ring to rule them all, One Ring to find them,
+< One Ring to bring them all, and in the darkness bind them,
+< In the Land of Mordor where the Shadows lie
+< # end
+\ No newline at end of file
+---
+> Ash nazg durbatulûk, ash nazg gimbatul,
+> ash nazg thrakatulûk,agh burzum-ishi krimpatul,
+> In the Land of Mordor where the Shadows lie
+\ No newline at end of file
