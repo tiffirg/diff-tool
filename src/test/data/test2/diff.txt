@@ -15,13 +15,8 @@
 < check this dokument. On
 ---
 > check this document. On
-24c25,29
-< be added after it.
-\ No newline at end of file
----
-> be added after it.
+24a26,29
 > 
 > This paragraph contains
 > important new additions
 > to this document.
-\ No newline at end of file

@@ -2,14 +2,9 @@
 < It is a truth universally acknowledged, that a single man in possession
 < of a good fortune, must be in want of a wife.
 < 
-7c4,9
-< of some one or other of their daughters.
-\ No newline at end of file
----
-> of some one or other of their daughters.
+7a5,9
 > 
 > "My dear Mr. Bennet," said his lady to him one day, "have you heard that
 > Netherfield Park is let at last?"
 > 
 > Mr. Bennet replied that he had not.
-\ No newline at end of file

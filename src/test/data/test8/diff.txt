@@ -12,9 +12,5 @@
 >         } else {
 >                 printf("Hello, Alex\n");
 >         }
-12c21,22
-<         return 0;
-\ No newline at end of file
----
->         return 0;
+12a22
 > }
