@@ -40,9 +40,11 @@
 #### 6. Приложение
 - 6.1. Создать класс `App`.
 - 6.2. Написать функцию `run(args) -> exitCode`.
+- 6.3. Написать функцию `compareTexts(text1, text2) -> diff`.
 
-#### 7. Алгоритм
-- 7.1. `TODO`
+#### 7. Алгоритм: LCS 
+- 7.1. Написать функцию `applyLCS(strings1: Array<String>, strings2: Array<String>)`
+- 7.2. Написать private функцию `getDynamicMatrix` для генерации динамической матрицы алгоритма.
 
 
  
