@@ -6,7 +6,7 @@ data class Arguments(
     var file1: String? = null,
     var file2: String? = null
 ) {
-    fun isEmpty() = file1 != null && file2 != null
+    fun isEmpty() = file1 == null && file2 == null
 
     fun getNotExistFile(): String? = when {
         file1 == null || file2 == null -> null
