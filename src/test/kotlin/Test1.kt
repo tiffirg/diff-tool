@@ -27,7 +27,7 @@ internal class Test1 {
     @Test
     fun testOfFiles() {
         val primaryPathDirectory = "src/test/resources/test"
-        for (i in 1..10) {
+        for (i in 1..9) {
             val pathDirectory = "$primaryPathDirectory$i/"
             val pathFileOrigin = "${pathDirectory}original.txt"
             val pathFileNew = "${pathDirectory}new.txt"
@@ -38,6 +38,7 @@ internal class Test1 {
 
             app.run(args)
             assertEquals(textFileDiff, stream.toString().trim())
+            stream.reset()
         }
     }
 

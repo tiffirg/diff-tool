@@ -1,8 +1,0 @@
-2c2,3
-< line2
----
-> line11
-> line22
-3a5,6
-> line4
-> line5
