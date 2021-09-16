@@ -44,7 +44,7 @@ internal class Test1 {
 
     @Test
     fun testOfHelp1() {
-        val args = arrayOf("/home/zer0/projects/idea/pf-2021-diff-tiffirg/src/test/data/test1/original.txt")
+        val args = arrayOf("src/test/data/test1/original.txt")
         app.run(args)
         assertEquals("Usage: diff <file1> <file2>", stream.toString().trim())
     }
@@ -58,8 +58,8 @@ internal class Test1 {
 
     @Test
     fun testOfExistFile1() {
-        val file1 = "/home/zer0/projects/idea/pf-2021-diff-tiffirg/src/test/resources/test/original.txt"
-        val file2 = "/home/zer0/projects/idea/pf-2021-diff-tiffirg/src/test/resources/test/new.txt"
+        val file1 = "src/test/resources/test/original.txt"
+        val file2 = "src/test/resources/test/new.txt"
         val args = arrayOf(file1, file2)
         app.run(args)
         assertEquals(
@@ -70,8 +70,8 @@ internal class Test1 {
 
     @Test
     fun testOfExistFile2() {
-        val file1 = "/home/zer0/projects/idea/pf-2021-diff-tiffirg/src/test/resources/test/original.txt"
-        val file2 = "/home/zer0/projects/idea/pf-2021-diff-tiffirg/src/test/resources/test1/new.txt"
+        val file1 = "src/test/resources/test/original.txt"
+        val file2 = "src/test/resources/test1/new.txt"
         val args = arrayOf(
             file1,
             file2
@@ -82,8 +82,8 @@ internal class Test1 {
 
     @Test
     fun testOfExistFile3() {
-        val file1 = "/home/zer0/projects/idea/pf-2021-diff-tiffirg/src/test/resources/test1/original.txt"
-        val file2 = "/home/zer0/projects/idea/pf-2021-diff-tiffirg/src/test/resources/test/new.txt"
+        val file1 = "src/test/resources/test1/original.txt"
+        val file2 = "src/test/resources/test/new.txt"
         val args = arrayOf(file1, file2)
         app.run(args)
         assertEquals("diff: $file2: No such file or directory", stream.toString().trim())
