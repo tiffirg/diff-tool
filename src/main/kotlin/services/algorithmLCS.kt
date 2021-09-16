@@ -50,5 +50,35 @@ fun applyLCS(strings1: List<String>, strings2: List<String>): List<String> {
             --j
     }
     return lcs.reversed()
+}
 
+/**
+ * Реализация получения вывода diff
+ * с помощью алгоритма LCS, описанного в `applyLCS`
+ */
+fun getDiffText(strings1: List<String>, strings2: List<String>): String {
+    val matrix = getDynamicMatrix(strings1, strings2)
+
+    val results = mutableListOf<String>()
+    var i = strings1.size
+    var j = strings2.size
+    while (i != 0 || j != 0) {
+        if (i > 0 && j > 0 && strings1[i - 1] == strings2[j - 1]) {
+            results.add(strings1[i - 1].trim())  // Unchanged
+            --i; --j
+        } else if (i == 0) {
+            results.add("+ ${strings2[j - 1]}".trim())  // Add
+            --j
+        } else if (j == 0) {
+            results.add("- ${strings1[i - 1]}".trim())  // Delete
+            --i
+        } else if (matrix[i - 1][j] <= matrix[i][j - 1]) {
+            results.add("+ ${strings2[j - 1]}".trim())  // Add
+            --j
+        } else {
+            results.add("- ${strings1[i - 1]}".trim())  // Delete
+            --i
+        }
+    }
+    return results.reversed().joinToString("\n")  // I could use a stack, but...no
 }
