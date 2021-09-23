@@ -2,6 +2,58 @@ package services
 
 import kotlin.math.max
 
+/**
+ * Реализация алгоритма LCS
+ * Начиная с последнего элемента, поднимаемся к началу по направлениям,
+ * заданным матрицей, и записываем символы в каждой позиции.
+ * Полученная последовательность начинается с конца, тогда
+ * перевернутая последовательность является результатом алгоритма.
+ * @see <a href="https://hsto.org/storage2/4c7/061/02a/4c706102aa8f467337723aa092f4bd5a.gif">Наглядная реализация</a>
+ */
+fun applyLCS(strings1: List<String>, strings2: List<String>): List<String> {
+    val matrix = getDynamicMatrix(strings1, strings2)
+    val lcs = mutableListOf<String>()
+    var i = strings1.size - 1
+    var j = strings2.size - 1
+    while (i >= 0 && j >= 0) {
+        if (strings1[i] == strings2[j]) {
+            lcs.add(strings1[i])
+            --i
+            --j
+        } else if (matrix[i][j + 1] > matrix[i + 1][j]) {
+            --i
+        } else {
+            --j
+        }
+    }
+    return lcs.reversed()
+}
+
+/**
+ * Реализация получения вывода diff
+ * с помощью алгоритма LCS, описанного в `applyLCS`
+ */
+fun getDiffText(strings1: List<String>, strings2: List<String>): String {
+    val matrix = getDynamicMatrix(strings1, strings2)
+
+    val results = mutableListOf<String>()
+    var i = strings1.size
+    var j = strings2.size
+    while (i != 0 || j != 0) {
+        if (i > 0 && j > 0 && strings1[i - 1] == strings2[j - 1]) {
+            results.add(strings1[i - 1].trim())  // Unchanged
+            --i
+            --j
+        } else if (i == 0 || (i != 0 && j != 0 && matrix[i - 1][j] <= matrix[i][j - 1])) {
+            results.add("+ ${strings2[j - 1]}".trim())  // Add
+            --j
+        } else {
+            results.add("- ${strings1[i - 1]}".trim())  // Delete
+            --i
+        }
+    }
+    return results.reversed().joinToString("\n")  // I could use a stack, but...no
+}
 
 /**
  * Динамическая матрица для алгоритма LCS
@@ -24,61 +76,4 @@ private fun getDynamicMatrix(strings1: List<String>, strings2: List<String>): Ar
         }
     }
     return matrix
-}
-
-
-/**
- * Реализация алгоритма LCS
- * Начиная с последнего элемента, поднимаемся к началу по направлениям,
- * заданным матрицей, и записываем символы в каждой позиции.
- * Полученная последовательность начинается с конца, тогда
- * перевернутая последовательность является результатом алгоритма.
- * @see <a href="https://hsto.org/storage2/4c7/061/02a/4c706102aa8f467337723aa092f4bd5a.gif">Наглядная реализация</a>
- */
-fun applyLCS(strings1: List<String>, strings2: List<String>): List<String> {
-    val matrix = getDynamicMatrix(strings1, strings2)
-    val lcs = mutableListOf<String>()
-    var i = strings1.size - 1
-    var j = strings2.size - 1
-    while (i >= 0 && j >= 0) {
-        if (strings1[i] == strings2[j]) {
-            lcs.add(strings1[i])
-            --i; --j
-        } else if (matrix[i][j + 1] > matrix[i + 1][j])
-            --i
-        else
-            --j
-    }
-    return lcs.reversed()
-}
-
-/**
- * Реализация получения вывода diff
- * с помощью алгоритма LCS, описанного в `applyLCS`
- */
-fun getDiffText(strings1: List<String>, strings2: List<String>): String {
-    val matrix = getDynamicMatrix(strings1, strings2)
-
-    val results = mutableListOf<String>()
-    var i = strings1.size
-    var j = strings2.size
-    while (i != 0 || j != 0) {
-        if (i > 0 && j > 0 && strings1[i - 1] == strings2[j - 1]) {
-            results.add(strings1[i - 1].trim())  // Unchanged
-            --i; --j
-        } else if (i == 0) {
-            results.add("+ ${strings2[j - 1]}".trim())  // Add
-            --j
-        } else if (j == 0) {
-            results.add("- ${strings1[i - 1]}".trim())  // Delete
-            --i
-        } else if (matrix[i - 1][j] <= matrix[i][j - 1]) {
-            results.add("+ ${strings2[j - 1]}".trim())  // Add
-            --j
-        } else {
-            results.add("- ${strings1[i - 1]}".trim())  // Delete
-            --i
-        }
-    }
-    return results.reversed().joinToString("\n")  // I could use a stack, but...no
 }
